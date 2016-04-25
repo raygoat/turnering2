@@ -21,7 +21,7 @@ class Turnament {
 		// init age counter
 		$alder = "";
 
-		// Overskrift
+		// Headline
 		echo '<p><h2>ØOB turnering ';
 		if ( $this->foraar ) {
 			echo ' forår ';
@@ -31,10 +31,10 @@ class Turnament {
 		echo date("Y");
 		echo '</h2></p>';
 
-		//start første linie
+		// start first line
 		echo "<table><tr><td><b>11-Mands</b></td></tr><tr>";
 
-		// Gennemløb alle kredse
+		// Run through all kredse
 		foreach ($this->turnament_data as $kreds) {
 			if ( $kreds[$this->alder] != $alder ) { //then it is a new age-group
 				if ( $kreds[$this->alder] != "" ){echo '</td>';} //only if not first time
@@ -49,7 +49,7 @@ class Turnament {
 			$alder = $kreds[$this->alder];
 		}
 
-		// Slut sidste linie og tabellen
+		// End last  line and the table
 		echo "</td></tr></table>";
 
 	}
