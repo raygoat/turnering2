@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name: Fixtures
- * Plugin URI: http://fixtures.nl
+ * Plugin URI: http://oob.dk
  * Description: Spilleplan plugin til WP til visning af DBU Fixtures
  * Version: 1.0.0
- * Author: Ray Goat
+ * Author: René Gedde
  * Author URI: 
- * License: Private code
+ * License: Private
  */
 
 //error_reporting(E_ALL);

@@ -24,6 +24,7 @@ class DBU {
 
 	public function getFixtures() {
 		try {
+			//Setup the parameters to call the DBU webservice
 			$params = array(
 				'Alder' => $this->age,
 				'KredsNummer' => $this->kreds
