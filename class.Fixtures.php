@@ -1,7 +1,6 @@
 <?php
 
 require_once 'class.DBU.php';
-require_once 'class.Finals.php';
 
 class Fixtures {
 
@@ -44,10 +43,6 @@ class Fixtures {
 			     "</tr>";
 		}
 		echo "</table>";
-
-		// Check if any final rounds exist and should be displayed
-		$finals = new Finals();
-		$finals->displayFinalRounds( $this->kreds );
 	}
 
 	/** Formatting helper functions **/
